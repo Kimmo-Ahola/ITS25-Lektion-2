@@ -4,6 +4,7 @@ x = "This is a text"
 
 # new_string = x[:5] # [start:stop:step]
 
+# [::-1] är ett snabbkommando för att vända på en sekvens
 reverse = x[::-1] # start = slutet, stop = början
 
 print(reverse)

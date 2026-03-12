@@ -1,6 +1,8 @@
 from pathlib import Path
 
 # grön färg = klass = OOP
+# grön färg är mitt färgtema. Kan skilja sig på hur det är för er
+# hovra ovanför ordet Path så bör ordet class stå med någonstans
 current_folder = Path.cwd() # current working directory
 
 user_input = input("Give me a file name: ")

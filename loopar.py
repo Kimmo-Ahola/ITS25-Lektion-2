@@ -2,46 +2,51 @@
 #     # allt inuti kodblocket som är indenterat körs tills 
 #     # loopen avslutas
 #     print("Looping...")
-
-# while True:
-#     user_input = input("y to quit: ")
-
-#     if user_input == "y":
-#         break
+# i oändliga loopar kan vi skriva ctrl + c i terminalen
 
 
-# is_running = True
+while True:
+    user_input = input("y to quit: ")
 
-# while is_running: # kollar alltid villkoret varje varv
-#     user_input = input("y to quit: ")
+    if user_input == "y":
+        break
+	
+    print("I will continue until you give me a \"y\"")
 
-#     if user_input == "y":
-#         is_running = False
 
-# counter = 0
+is_running = True
 
-# while counter < 5:
-#     counter = counter + 1
+while is_running: # kollar alltid villkoret varje varv
+    user_input = input("y to quit: ")
 
-# print("Klar")
+    if user_input == "y":
+        is_running = False
 
-# for i in range(20, 10, -2): # range(start, stop, step) stop != inclusive
-#     print(i)
+counter = 0
 
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+while counter < 5:
+    counter = counter + 1
 
-# # for number in numbers: # loopa igenom samlingar
-# #     print(number)
+print("Klar")
 
-# # names = ["Kimmo", "Lars", "Göran"]
+for i in range(20, 10, -2): # range(start, stop, step) stop != inclusive
+    print(i)
 
-# # for name in names:
-# #     # names[name] detta är fel
-# #     print(name)
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# for index, number in enumerate(numbers):
-# 	if index == 5:
-# 	    print(f"index position: {index}. Values is: {number}")
+for number in numbers: # loopa igenom samlingar/sekvenser
+    print(number)
+
+# names = ["Kimmo", "Lars", "Göran"]
+
+# for name in names:
+#     # names[name] detta är fel
+#       vi kör inte med [] i denna typen av loop
+#     print(name)
+
+for index, number in enumerate(numbers):
+	if index == 5:
+	    print(f"index position: {index}. Values is: {number}")
 
 
 for i in range(20):
